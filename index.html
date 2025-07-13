@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع المصحف - القرآن الكريم، الأذكار، السبحة، حول الموقع.">
+  <title>المصحف | القرآن الكريم والأذكار</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="welcome-screen">
+    <h1>المصحف</h1>
+    <p>صلّ على النبي</p>
+    <button onclick="startSite()">ابدأ</button>
+  </div>
+
+  <div id="main-content" class="hidden">
+    <header>
+      <h2>المصحف</h2>
+      <div class="settings">
+        <label>
+          <input type="checkbox" id="darkModeToggle" checked>
+          الوضع الداكن
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="grid">
+        <div class="card" onclick="navigateTo('quran')">
+          <h3>القرآن الكريم</h3>
+        </div>
+        <div class="card" onclick="navigateTo('azkar')">
+          <h3>الأذكار</h3>
+        </div>
+        <div class="card" onclick="navigateTo('sebha')">
+          <h3>السبحة</h3>
+        </div>
+        <div class="card" onclick="navigateTo('about')">
+          <h3>حول الموقع</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
