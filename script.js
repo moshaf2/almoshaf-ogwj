@@ -1,8 +1,4 @@
-function startSite() {
-  document.getElementById("welcome-screen").style.display = "none";
-  document.getElementById("main-content").style.display = "block";
-}
-
-function toggleDarkMode() {
-  document.body.classList.toggle("dark");
+function enterSite() {
+  document.querySelector('.splash-screen').style.display = 'none';
+  document.querySelector('.main-content').classList.remove('hidden');
 }
