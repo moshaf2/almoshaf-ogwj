@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #fff;
+  color: #2e1e14;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #2e1e14;
+  color: #f7f4f1;
+}
+
+#welcome-screen {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#welcome-screen h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#welcome-screen p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#welcome-screen button {
+  font-size: 20px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #8b5e3c;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+header {
+  padding: 20px;
+  background-color: #8b5e3c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.section {
+  padding: 30px;
+  background-color: #f1e7dd;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.section:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 14px;
+}
+
+body.dark .section {
+  background-color: #3e2d21;
+  color: white;
+}
+
+body.dark footer {
+  background-color: #1d120d;
+  color: #bbb;
+}
